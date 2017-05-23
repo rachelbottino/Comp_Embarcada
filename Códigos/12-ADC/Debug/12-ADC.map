@@ -7824,40 +7824,40 @@ OUTPUT(12-ADC.elf elf32-littlearm)
  .debug_line    0x0000b5d5      0x7d4 src/ASF/sam/utils/cmsis/same70/source/templates/system_same70.o
  .debug_line    0x0000bda9      0x3d0 src/ASF/sam/utils/syscalls/gcc/syscalls.o
 
-.debug_str      0x00000000    0x8bc60
- .debug_str     0x00000000    0x87c8a src/main.o
-                              0x883ce (size before relaxing)
- .debug_str     0x00087c8a       0x35 src/ASF/common/services/delay/sam/cycle_counter.o
+.debug_str      0x00000000    0x8bca5
+ .debug_str     0x00000000    0x87ca1 src/main.o
+                              0x883e5 (size before relaxing)
+ .debug_str     0x00087ca1       0x63 src/ASF/common/services/delay/sam/cycle_counter.o
                               0x8153f (size before relaxing)
- .debug_str     0x00087cbf      0x2d8 src/ASF/common/services/clock/same70/sysclk.o
+ .debug_str     0x00087d04      0x2d8 src/ASF/common/services/clock/same70/sysclk.o
                               0x85930 (size before relaxing)
- .debug_str     0x00087f97       0xbd src/ASF/common/services/sleepmgr/sam/sleepmgr.o
+ .debug_str     0x00087fdc       0xbd src/ASF/common/services/sleepmgr/sam/sleepmgr.o
                               0x8154b (size before relaxing)
- .debug_str     0x00088054       0x94 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
+ .debug_str     0x00088099       0x94 src/ASF/common/utils/interrupt/interrupt_sam_nvic.o
                               0x8140f (size before relaxing)
- .debug_str     0x000880e8       0x2c src/ASF/common/utils/stdio/read.o
+ .debug_str     0x0008812d       0x2c src/ASF/common/utils/stdio/read.o
                               0x813be (size before relaxing)
- .debug_str     0x00088114       0x26 src/ASF/common/utils/stdio/write.o
+ .debug_str     0x00088159       0x26 src/ASF/common/utils/stdio/write.o
                               0x813c0 (size before relaxing)
- .debug_str     0x0008813a      0x9d6 src/ASF/sam/boards/same70_xplained/init.o
+ .debug_str     0x0008817f      0x9d6 src/ASF/sam/boards/same70_xplained/init.o
                               0x86645 (size before relaxing)
- .debug_str     0x00088b10      0x8df src/ASF/sam/drivers/afec/afec.o
+ .debug_str     0x00088b55      0x8df src/ASF/sam/drivers/afec/afec.o
                               0x86a48 (size before relaxing)
- .debug_str     0x000893ef      0x5b0 src/ASF/sam/drivers/pio/pio.o
+ .debug_str     0x00089434      0x5b0 src/ASF/sam/drivers/pio/pio.o
                               0x81f65 (size before relaxing)
- .debug_str     0x0008999f      0x111 src/ASF/sam/drivers/pio/pio_handler.o
+ .debug_str     0x000899e4      0x111 src/ASF/sam/drivers/pio/pio_handler.o
                               0x81fd6 (size before relaxing)
- .debug_str     0x00089ab0      0x7cb src/ASF/sam/drivers/pmc/pmc.o
+ .debug_str     0x00089af5      0x7cb src/ASF/sam/drivers/pmc/pmc.o
                               0x820c9 (size before relaxing)
- .debug_str     0x0008a27b      0x206 src/ASF/sam/drivers/uart/uart.o
+ .debug_str     0x0008a2c0      0x206 src/ASF/sam/drivers/uart/uart.o
                               0x816bf (size before relaxing)
- .debug_str     0x0008a481      0x952 src/ASF/sam/drivers/usart/usart.o
+ .debug_str     0x0008a4c6      0x952 src/ASF/sam/drivers/usart/usart.o
                               0x81f57 (size before relaxing)
- .debug_str     0x0008add3      0x5e4 src/ASF/sam/utils/cmsis/same70/source/templates/gcc/startup_same70.o
+ .debug_str     0x0008ae18      0x5e4 src/ASF/sam/utils/cmsis/same70/source/templates/gcc/startup_same70.o
                               0x81bb5 (size before relaxing)
- .debug_str     0x0008b3b7      0x16f src/ASF/sam/utils/cmsis/same70/source/templates/system_same70.o
+ .debug_str     0x0008b3fc      0x16f src/ASF/sam/utils/cmsis/same70/source/templates/system_same70.o
                               0x726a8 (size before relaxing)
- .debug_str     0x0008b526      0x73a src/ASF/sam/utils/syscalls/gcc/syscalls.o
+ .debug_str     0x0008b56b      0x73a src/ASF/sam/utils/syscalls/gcc/syscalls.o
                                0x69ea (size before relaxing)
 
 .debug_frame    0x00000000     0x22a0

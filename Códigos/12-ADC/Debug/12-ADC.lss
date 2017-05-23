@@ -33,9 +33,9 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  14 .debug_line   0000c179  00000000  00000000  00055af9  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_str    0008bc60  00000000  00000000  00061c72  2**0
+ 15 .debug_str    0008bca5  00000000  00000000  00061c72  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_frame  000022a0  00000000  00000000  000ed8d4  2**2
+ 16 .debug_frame  000022a0  00000000  00000000  000ed918  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -1282,6 +1282,12 @@ __attribute__( ( always_inline ) ) __STATIC_INLINE void __ISB(void)
 {
   __ASM volatile ("isb");
   4006dc:	f3bf 8f6f 	isb	sy
+ *
+ * \param ul_id Id (number) of the peripheral clock.
+ */
+static inline void sysclk_enable_peripheral_clock(uint32_t ul_id)
+{
+	pmc_enable_periph_clk(ul_id);
   4006e0:	200a      	movs	r0, #10
   4006e2:	4c2f      	ldr	r4, [pc, #188]	; (4007a0 <board_init+0x174>)
   4006e4:	47a0      	blx	r4
@@ -8674,12 +8680,12 @@ extern int _lseek(int file, int ptr, int dir)
   404208:	2d2d0a0d 	.word	0x2d2d0a0d
   40420c:	6d6f4320 	.word	0x6d6f4320
   404210:	656c6970 	.word	0x656c6970
-  404214:	41203a64 	.word	0x41203a64
-  404218:	32207270 	.word	0x32207270
-  40421c:	30322037 	.word	0x30322037
+  404214:	4d203a64 	.word	0x4d203a64
+  404218:	32207961 	.word	0x32207961
+  40421c:	30322032 	.word	0x30322032
   404220:	31203731 	.word	0x31203731
-  404224:	34303a34 	.word	0x34303a34
-  404228:	2034303a 	.word	0x2034303a
+  404224:	36343a32 	.word	0x36343a32
+  404228:	2030353a 	.word	0x2030353a
   40422c:	000d2d2d 	.word	0x000d2d2d
   404230:	706d6554 	.word	0x706d6554
   404234:	25203a20 	.word	0x25203a20

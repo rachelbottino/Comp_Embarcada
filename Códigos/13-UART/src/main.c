@@ -151,10 +151,10 @@ static void USART1_init(void){
  * Retorna a quantidade de char escritos
  */
 uint32_t usart_puts(uint8_t *pstring){
-	int count = 0;
-	while(pstring != \NULL){
-		usart_serial_putchar(USART1, pstring);
-		while(uart_is_tx_empty(ID_USART1)==1){
+	uint32_t count = 0;
+	while(pstring[count] != NULL){
+		usart_serial_putchar(USART1, pstring[count]);
+		while(uart_is_tx_empty(ID_USART1)){
 			delay_ms(1);
 		}
 		count += 1;		
@@ -170,8 +170,15 @@ uint32_t usart_puts(uint8_t *pstring){
  * Retorna a quantidade de char lidos
  */
 uint32_t usart_gets(uint8_t *pstring){
+	uint32_t count = 0;
+	uint8_t valor;
+	while(pstring[count] != '\n'){
+		usart_serial_putchar(USART1, &valor);
+		pstring[count]=valor;
+		count += 1;
+	}
 
-  return 0;  
+	return (count);  
 }
 
 /************************************************************************/
@@ -200,8 +207,8 @@ int main(void){
         
 	while (1) {
     sprintf(bufferTX, "%s \n", "Ola Voce");
-    //usart_puts(bufferTX);
-   // usart_gets(bufferRX);
+    usart_puts(bufferTX);
+    usart_gets(bufferRX);
     delay_s(1);
 	}
 }
